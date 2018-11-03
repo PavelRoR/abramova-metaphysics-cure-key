@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Rubik';
-    src: url('fonts/Rubik.eot');
-    src: url('fonts/Rubik.eot') format('embedded-opentype'),
-         url('fonts/Rubik.woff2') format('woff2'),
-         url('fonts/Rubik.woff') format('woff'),
-         url('fonts/Rubik.ttf') format('truetype'),
-         url('fonts/Rubik.svg#Rubik') format('svg');
-}

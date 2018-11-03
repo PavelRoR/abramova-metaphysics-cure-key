@@ -1,14 +1,107 @@
+@font-face {
+	font-family: 'GilroyExtraBold';
+	src: url('../fonts/GilroyExtraBold.eot');
+	src: url('../fonts/GilroyExtraBold.eot') format('embedded-opentype'),
+		 url('../fonts/GilroyExtraBold.woff2') format('woff2'),
+		 url('../fonts/GilroyExtraBold.woff') format('woff'),
+		 url('../fonts/GilroyExtraBold.ttf') format('truetype'),
+		 url('../fonts/GilroyExtraBold.svg#GilroyExtraBold') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GilroyLight';
+	src: url('../fonts/GilroyLight.eot');
+	src: url('../fonts/GilroyLight.eot') format('embedded-opentype'),
+		 url('../fonts/GilroyLight.woff2') format('woff2'),
+		 url('../fonts/GilroyLight.woff') format('woff'),
+		 url('../fonts/GilroyLight.ttf') format('truetype'),
+		 url('../fonts/GilroyLight.svg#GilroyLight') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBoldItalic';
+	src: url('../fonts/OpenSansBoldItalic.eot');
+	src: url('../fonts/OpenSansBoldItalic.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBoldItalic.woff2') format('woff2'),
+		 url('../fonts/OpenSansBoldItalic.woff') format('woff'),
+		 url('../fonts/OpenSansBoldItalic.ttf') format('truetype'),
+		 url('../fonts/OpenSansBoldItalic.svg#OpenSansBoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'OpenSansItalic';
+	src: url('../fonts/OpenSansItalic.eot');
+	src: url('../fonts/OpenSansItalic.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansItalic.woff2') format('woff2'),
+		 url('../fonts/OpenSansItalic.woff') format('woff'),
+		 url('../fonts/OpenSansItalic.ttf') format('truetype'),
+		 url('../fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSansLight.eot');
+	src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansLight.woff') format('woff'),
+		 url('../fonts/OpenSansLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Rubik';
+	src: url('../fonts/Rubik.eot');
+	src: url('../fonts/Rubik.eot') format('embedded-opentype'),
+		 url('../fonts/Rubik.woff2') format('woff2'),
+		 url('../fonts/Rubik.woff') format('woff'),
+		 url('../fonts/Rubik.ttf') format('truetype'),
+		 url('../fonts/Rubik.svg#Rubik') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'RubikBold';
+	src: url('../fonts/RubikBold.eot');
+	src: url('../fonts/RubikBold.eot') format('embedded-opentype'),
+		 url('../fonts/RubikBold.woff2') format('woff2'),
+		 url('../fonts/RubikBold.woff') format('woff'),
+		 url('../fonts/RubikBold.ttf') format('truetype'),
+		 url('../fonts/RubikBold.svg#RubikBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
 *
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-size: 16px
+	font-family: 'GilroyLight', sans-serif
 a
 	color: #fefefe
 	&:focus
 		outline: 0
 	&:hover
 		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight: normal
 button
 	border none
 .video_wrapper
@@ -42,3 +135,32 @@ button
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	background-color: rgb(255, 178, 30);
+	width 100%
+	max-width: 291px;
+	height: 60px;
+	line-height: 60px;
+	font-family: "GilroyExtraBold", sans-serif;
+	color: rgb(8, 24, 51);
+	text-align: center;
+	margin 0 auto
+	border-radius: 30px
+	text-transform: uppercase
+	&:focus
+		background-color: rgb(255, 178, 30);
+		color: rgb(8, 24, 51);
+		text-decoration: none
+	&:hover
+		background-color: rgba(255, 178, 30, .7);
+		color: rgb(8, 24, 51);
+		text-decoration: none
+
+@import 'subscr/main'
+@import 'subscr/for'
+@import 'subscr/plan'
+@import 'subscr/author'
+@import 'subscr/revs'
+@import 'subscr/last'
+@import 'subscr/medias'
