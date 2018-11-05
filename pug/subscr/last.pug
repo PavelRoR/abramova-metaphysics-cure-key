@@ -15,34 +15,34 @@ section#last
 				button(type="button" class="close" data-dismiss="modal" aria-label="Close")
 					span(aria-hidden="true") &times;
 				.modal-body
-					form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).rowf.form_newsletter.form_newsletter_mail_section
-						h3.mail_section_title.modal_mail_section_title Спешите записатья и получить бонус!
-						h4.mail_subtitle.infront.modal_mail_subtitle.infront “Можно ли винить гены?”
-						p.infront_submit.hide
+					form(action="https://aleksandrkudryashov1.autoweboffice.ru/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="results").row.form_newsletter.form_newsletter_mail_section.modal_form
+						h3.mail_section_title.modal_mail_section_title.infront Спешите записатья и получить бонус!
+						h3.infront_submit
+						h4.mail_subtitle.modal_mail_subtitle.phone_title “Можно ли винить гены?”
 						.form_container
 							.email-block
 								input( type="hidden" value="1" name="required_fields[email]")
 								input(class="mail" name="Contact[email]" type="text" placeholder="Ваш email")
 							.phone-block.hide
 								input(type="hidden" value="0" name="required_fields[phone_number]")
-								input(class="phone" maxlength="255" name="Contact[phone_number]" type="number" placeholder="79333333333")
+								input(class="phone" maxlength="255" name="Contact[phone_number]" type="tel" placeholder="79333333333")
 							button(type="submit").button.button_mail Записаться
 						.clearfix
 						p.alert_message Введите почту
 						<!--Обязательный параметр. Не удалять и не изменять!-->
-						input(type="hidden" value="478" name="Contact[id_newsletter]")
+						input(type="hidden" value="505" name="Contact[id_newsletter]")
 						<!--API код канала рекламы-->
-						input(type="hidden" value="Раздорский Метафизика" name="Contact[id_advertising_channel_page]")
+						input(type="hidden" value="Абрамова Метафизика" name="Contact[id_advertising_channel_page]")
 						.checking
-							input(type="checkbox" id="check" checked).check
-							label(for="check").check_label Я согласен с 
+							input(type="checkbox" id="check_m" checked).check
+							label(for="check_m").check_label Я согласен с 
 								a(href="javascript:void(0);")(data-toggle="modal" data-target="#myPolitics")  условиями обработки персональных данных
 								|  по 152 - Ф3
 					h4.mail_subtitle.modal_soc_buttons_mail_title или запишитесь с помощью социальных сетей:
 					.mail_soc_buttons
-						a.mail_soc_buttons_link.soc_button_vk(href="https://vk.com/app6379730_-96028637#l=23;auto=1" target="_blank")
+						a.mail_soc_buttons_link.soc_button_vk(href="https://vk.com/app6379730_-96028637#l=27;auto=1" target="_blank")
 							i.fab.fa-vk
-						a.mail_soc_buttons_link.soc_button_ms(href="https://m.me/1726493250936970?ref=ml12" target="_blank")
+						a.mail_soc_buttons_link.soc_button_ms(href="https://m.me/1726493250936970?ref=ml16" target="_blank")
 							i.fab.fa-facebook-messenger
 .modal.fade(tabindex="-1" role="dialog")#myPolitics
 	.modal-dialog(role="document")
