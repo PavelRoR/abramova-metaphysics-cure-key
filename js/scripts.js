@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     /* Работа формы */
     $(function () {
         var check = $('.check', this),
@@ -68,7 +68,30 @@ $(document).ready(function() {
             }
         }
     });
+    /*Видео-отзывы Жанны*/
+    $('#jannas_videos').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ["‹", "›"],
+        dots: false,
+        items: 1
+    });
+    /*Текстовые отзывы Жанны*/
+    $('#jannas_texts').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ["‹", "›"],
+        dots: false,
+        items: 1,
+        autoHeight: true
+    });
+    /*Видео в отзывах*/
+    $(".video_wrapper img").click(function () {
+        var a = $(this).parent().attr("data-youtube");
+        $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" allowfullscreen></iframe>')
+    });
 
-
-/*Конец документа*/
+    /*Конец документа*/
 });
