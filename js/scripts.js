@@ -19,7 +19,7 @@ $(document).ready(function () {
 			}
 			if (!phone.val().match(rePh)) {
 				message.text('Только цифры').slideDown(500);
-				phone.val();
+				phone.val('');
 				return false;
 			}
 
@@ -36,13 +36,17 @@ $(document).ready(function () {
 			$(".infront_submit", this).html("Зарегистрирован Ваш e-mail: " + email.val() + "<br>Бонус уже у Вас на почте").removeClass("hide");
 			$(".phone_title", this).html("Если Вы хотите, чтобы мы напомнили Вам о начале трансляции, <br>введите свой номер телефона").removeClass("hide");
 			if (email.val() && phone.val() && check) {
-				window.location = 'https://mastervision.su/abramova-metaphysics-cure-key/partnership/';
+				window.location = 'https://mastervision.su/abramova-metaphysics-cure-key/bonus/';
 				$(".phone_title", this).html('Ваш номер ' + phone.val() + ' зарегистрирован!');
-				$('.button', this).text('Отправлено!');
+				$('.button', this).text('Отправляем...');
 			}
 		});
 		email.click(function () {
 			email.css("border", "none");
+			message.slideUp(500);
+		});
+		phone.click(function () {
+			phone.css("border", "none");
 			message.slideUp(500);
 		});
 		check.click(function () {
