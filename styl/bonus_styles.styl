@@ -192,6 +192,11 @@ button
 	float: left
 	width 165px
 	height auto
+#logo2
+	display: none
+	width 165px
+	height auto
+	margin 0 auto 10px
 .contacts
 	float: right
 	text-align: right
@@ -224,14 +229,18 @@ button
 	color: rgb(255, 178, 30);
 	line-height: 1.3
 	font-size: 22px
+	position relative
+	z-index 9
 .main_title
 	font-size: 36px;
-	font-family: "GilroyExtraBold";
+	font-family: "GilroyExtraBold", sans-serif;
 	color: rgb(47, 59, 74);
 	line-height: 1.089;
 	width 100%
 	max-width: 460px;
 	margin 15px 0
+	position relative
+	z-index 9
 	span
 		font-family: "GilroyLight", sans-serif;
 .main_date
@@ -244,17 +253,21 @@ button
 	text-align: center
 	padding 0 10px
 	font-size: 20px;
-	font-family: "GilroyExtraBold";
+	font-family: "GilroyExtraBold", sans-serif;
 	color: rgb(47, 59, 74);
 	color #2f3b4a
+	position relative
+	z-index 9
 	span
 		font-family: "GilroyLight", sans-serif;
 .video_wrapper_main
 	max-width 450px
 	margin 30px auto 0 0
 	box-shadow: 0px 1px 11.83px 1.17px rgba(0,0,0,0.1);
+	z-index 9
 #bonus_feedback
 	padding 60px 0
+	min-height calc(100vh - 795px)
 .feedback_general_title
 	margin-bottom: 70px
 #vk
@@ -303,3 +316,129 @@ button
 			background-color: #0e3f66
 			i
 				color #F5B334
+@media screen and (min-width 1400px)
+	#main
+		background-position: center top
+	#blue_back
+		right -472px
+@media screen and (min-width 2295px)
+	.container
+		width 1400px
+	.contacts a i
+	.contacts a i+span
+		font-size: 19px
+	#blue_back
+		right: -338px;
+		bottom: -65px;
+	.pre
+		font-size: 24px
+	.main_title
+		font-size: 40px
+		max-width 490px
+		margin 25px 0 35px
+	.main_date
+		max-width 415px
+		font-size: 20px
+	.video_wrapper_main
+		max-width 520px
+	#bonus_feedback
+		padding 90px 0
+		min-height: calc(100vh - 885px);
+	#footer #conditions, #footer p
+		font-size: 18px
+	.soc_buttons a
+	.soc_buttons a i
+		width: 45px
+		height 45px
+	.soc_buttons a i
+		line-height: 45px
+		font-size: 30px
+@media screen and (max-width 1199px)
+	#blue_back
+		right: -548px;
+		bottom: -33px;
+	.main_title
+		max-width 320px
+@media screen and (max-width 991px)
+	#main
+		text-align: center
+		background-color: #1D4268
+		background-image url(../img/waves.png)
+		background-repeat repeat
+		padding-bottom: 40px
+	#blue_back
+		display: none
+	#header
+		padding 15px 0
+	#logo
+		display: none
+	#logo2
+		display block
+	.contacts
+		float: none
+		text-align: center
+		a
+			display: inline-block
+	.main_title
+		min-width 100%
+		color: #fff
+	.main_date
+		margin 0 auto
+		color #fff
+	.video_wrapper_main
+		margin 30px auto 0
+	#bonus_feedback
+		padding: 40px 0
+	#footer
+		padding 30px 0
+@media screen and (max-width 767px)
+	.feedback_general_title
+		margin-bottom: 35px
+	#vk
+		margin-bottom: 20px
+@media screen and (max-width 481px)
+	#logo2
+		width: 150px
+	.contacts a i
+	.contacts a i + span
+		font-size: 13px
+	.contacts a i
+		line-height: 18px
+	#header
+		margin-bottom: 0
+	.pre
+		font-size: 20px
+	.main_title
+		font-size: 28px
+	.main_date
+		font-size: 18px
+	#main
+		padding-bottom: 30px
+	#bonus_feedback
+		padding 30px 0
+	.general_title
+		font-size: 24px
+	#footer
+		padding 20px 0
+	#footer h5
+		font-size: 20px
+		margin-bottom: 10px
+	#footer #conditions, #footer p
+		font-size: 12px
+	.soc_buttons a
+		margin 0 8px 8px
+@media screen and (max-width 380px)
+	.pre
+		font-size: 18px
+	.main_title
+		font-size: 24px
+		margin 10px 0 15px
+	.main_date
+		font-size: 15px
+		height: auto;
+		line-height: 41px;
+		padding 0 5px
+	.video_wrapper_main
+		margin-top: 20px
+	.general_title
+		font-size: 22px
