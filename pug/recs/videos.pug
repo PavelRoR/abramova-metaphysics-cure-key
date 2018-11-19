@@ -1,0 +1,41 @@
+section#videos
+	.container
+		h3.general_title.videos_general_title 
+			span Записи и домашние задания 
+			| интенсива
+		#videos_container
+			ul.videos_container_buttons
+				li
+					a(href="#day_1") День 1
+				li
+					a(href="#day_2") День 2
+				li
+					a(href="#day_3") День 3
+			.videos_day_container
+				.videos_day#day_1
+					h4.videos_day_title День 1
+					.video_wrapper.videos_day_video_wrapper
+						iframe(src="https://youtube.com/embed/-zzFSfMovdI?rel=0",  allowfullscreen)
+					p.videos_day_text Запись занятия будет здесь 21.11, после 12:00 мск
+				.videos_day#day_2
+					h4.videos_day_title День 2
+					p.videos_day_text Занятие состоится 21.11, в 19:00 мск
+					p.videos_day_text Запись занятия будет здесь 22.11, после 12:00 мск
+				.videos_day#day_3
+					h4.videos_day_title День 3
+					p.videos_day_text Занятие состоится 22.11, в 19:00 мск
+					p.videos_day_text Запись занятия будет здесь 23.11, после 12:00 мск
+		p.buy_recs_text Купить записи интенсива за 539р.
+		a.button.buy_recs_button(href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2386&clean=true&lg=ru" target="_blank") Купить
+		#feedback
+			h3.general_title.feedback_general_title Ваши ответы и вопросы к Жанне пишите 
+				span в формах ниже:
+			.row
+				.col-md-6.col-sm-6
+					#vk
+						#vk_comments
+						script(type="text/javascript")
+							| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+				.col-md-6.col-sm-6
+					#fb
+						.fb-comments(data-href="https://mastervision.su/abramova-metaphysics-cure-key/records/records/" data-width="100%" data-numposts="15" data-order-by="reverse_time")

@@ -1,0 +1,82 @@
+-var sale_1 = '1 500р.'
+-var sale_2 = '3 000р.'
+-var today_1 = '9 900р.'
+-var today_2 = '19 900р.'
+-var link_1 = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2377&clean=true&lg=ru'
+-var link_2 = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2381&clean=true&lg=ru'
+-var prep_bonus = '1 100р.'
+-var prep_cred = '3 000р.'
+-var prep_link = 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2390&clean=true&lg=ru'
+
+section#prices
+	.container
+		h3.general_title.prices_general_title Выберите 
+			span свой пакет 
+			| участия
+		.row.prices_row
+			.col-md-6.col-sm-6
+				.price
+					.price_head
+						h4.price_head_title Модуль 1
+					.price_body
+						h5.price_body_subtitle «Исцеление первичной клетки»  
+							small 9 занятий + 3 занятия ответов на вопросы (практикумы)
+						ul.price_body_list
+							li Биология сознания
+							li Безопасность и выживание
+							li Страхи и фобии
+							li Эпигенетика
+							li Травмы как память вторжения
+							li Травмы при беременности
+							li Самосаботаж и заболевания
+							li Анатомия и метафизика
+							li Инструменты исцеления
+					.price_footer
+						p.cost.cost_full Стоимсоть:
+							span 11 400р.
+						p.cost.cost_sale Скидка:
+							span#sale_1= sale_1
+						p.cost.cost_today Стоимость сегодня:
+							span#today_1= today_1
+						a.button.price_button.price_button_1(href= link_1 target="_blank")#link_1 Выбрать
+			.col-md-6.col-sm-6
+				.price
+					.price_head
+						h4.price_head_title Модуль 2
+					.price_body
+						h5.price_body_subtitle
+							small 21 занятие + 6 занятий вопросы на ответы (практикум)
+						ul.price_body_list
+							li Женские заболевания 
+							li Наши ткани, кости и суставы
+							li Защитные системы организма
+							li Кто еще живет в нашем теле?
+							li Метафизика слуха и зрения
+							li Системы нашего тела
+							li Гормональная система и миссия души
+							li Чистые сосуды, здоровое сердце
+							li Внутренние органы, корни заболеваний
+							li Костная система - жизненный стержень
+							li Новообразования
+							li Манифестация и интеграция здоровья
+					.price_footer
+						p.cost.cost_full Стоимсоть:
+							span 22 900р.
+						p.cost.cost_sale Скидка:
+							span#sale_2= sale_2
+						p.cost.cost_today Стоимость сегодня:
+							span#today_2= today_2
+						a.button.price_button.price_button_2(href= link_2  target="_blank")#link_2 Выбрать
+		.prepayment
+			h4.prepaymant_title Акция!!!
+			p.prepayment_text Платите 1900 рублей, бонусом получаете 
+				span#prepayment_bonus= prep_bonus 
+				br
+				| На счет зачисляется 
+				span#prepayment_credited= prep_cred
+			a.button.prepayment_button(href= prep_link target="_blank")#prepayment_link Получить 
+				span 1 100р.
+		.timer
+			h4.timer_title Скидка уменьшится через:
+			.clock
+			.clock-stop
