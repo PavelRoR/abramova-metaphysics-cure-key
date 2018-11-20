@@ -24,7 +24,7 @@ $(document).ready(function () {
 	$(function () {
 		/* Таймер */
 		var clock;
-		var futureDate = new Date("November 2, 2018 00:00 AM UTC+3");
+		var futureDate = new Date("November 21, 2018 00:00 AM UTC+3");
 		var currentDate = new Date();
 		var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
@@ -40,16 +40,15 @@ $(document).ready(function () {
 			diff = 0;
 			$('.clock-stop').addClass("alert-danger");
 			$('.clock-stop').html("Скидка уменьшилась!");
-			// $('#sale_1').text('1 000р.');
-			// $('#sale_2').text('2 000р.');
-			// $('#today_1').text('10 400р.');
-			// $('#today_2').text('20 900р.');
-			// $('#link_1').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2378&clean=true&lg=ru');
-			// $('#link_2').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2382&clean=true&lg=ru');
-			// $('#prepayment_bonus').text('900р.');
-			// $('#prepayment_credited').text('2 800р.');
-			// $('#prepayment_link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2391&clean=true&lg=ru');
-			// $('#prepayment_link span').text('900р.');
+			$('#sale_1').text('1 000р.');
+			$('#sale_2').text('2 000р.');
+			$('#today_1').text('10 400р.');
+			$('#today_2').text('20 900р.');
+			$('#link_1').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2378&clean=true&lg=ru');
+			$('#link_2').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2382&clean=true&lg=ru');
+			$('#prepayment_bonus').text('900р.');
+			$('#prepayment_credited').text('2 800р.');
+			$('#prepayment_link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2391&clean=true&lg=ru');
 		}
 		clock = $('.clock').FlipClock(diff, {
 			clockFace: 'HourlyCounter',
@@ -60,16 +59,15 @@ $(document).ready(function () {
 					$('.clock-stop').addClass("alert-danger");
 					("alert-danger");
 					$('.clock-stop').html("Скидка уменьшилась!");
-					// $('#sale_1').text('1 000р.');
-					// $('#sale_2').text('2 000р.');
-					// $('#today_1').text('10 400р.');
-					// $('#today_2').text('20 900р.');
-					// $('#link_1').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2378&clean=true&lg=ru');
-					// $('#link_2').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2382&clean=true&lg=ru');
-					// $('#prepayment_bonus').text('900р.');
-					// $('#prepayment_credited').text('2 800р.');
-					// $('#prepayment_link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2391&clean=true&lg=ru');
-					// $('#prepayment_link span').text('900р.');
+					$('#sale_1').text('1 000р.');
+					$('#sale_2').text('2 000р.');
+					$('#today_1').text('10 400р.');
+					$('#today_2').text('20 900р.');
+					$('#link_1').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2378&clean=true&lg=ru');
+					$('#link_2').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2382&clean=true&lg=ru');
+					$('#prepayment_bonus').text('900р.');
+					$('#prepayment_credited').text('2 800р.');
+					$('#prepayment_link').attr('href', 'https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2391&clean=true&lg=ru');
 				}
 			},
 		});
